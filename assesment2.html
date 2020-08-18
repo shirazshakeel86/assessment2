@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <script>
+
+
+function disable1() {
+document.getElementById("name1").disabled = true;
+document.getElementById("p1").disabled = true;
+}
+
+function disable2(){
+    document.getElementById("name2").disabled=true;
+    document.getElementById("p2").disabled = true;
+}
+function disable3(){
+    document.getElementById("name3").disabled=true;
+    document.getElementById("p3").disabled = true;
+}
+function disable4(){
+    document.getElementById("name4").disabled=true;
+    document.getElementById("p4").disabled = true;
+}
+function disable5(){
+    document.getElementById("name5").disabled=true;
+    document.getElementById("p5").disabled = true;
+}
+function disable6(){
+    document.getElementById("name6").disabled=true;
+    document.getElementById("p6").disabled = true;
+}
+function disable7(){
+    document.getElementById("name7").disabled=true;
+    document.getElementById("p7").disabled = true;
+}
+function disable8() {
+document.getElementById("name8").disabled = true;
+document.getElementById("numb1").disabled=true;
+}
+function disable9() {
+document.getElementById("name9").disabled = true;
+document.getElementById("numb2").disabled=true;
+}
+function disable10() {
+document.getElementById("name10").disabled = true;
+document.getElementById("numb3").disabled=true;
+}
+function disable11() {
+document.getElementById("name11").disabled = true;
+document.getElementById("numb4").disabled=true;
+}
+function disable12() {
+document.getElementById("name12").disabled = true;
+document.getElementById("numb5").disabled=true;
+}
+function disable13() {
+document.getElementById("name13").disabled = true;
+document.getElementById("numb6").disabled=true;
+}
+function disable14() {
+document.getElementById("name14").disabled = true;
+document.getElementById("numb7").disabled=true;
+}
+        
+        function validate(){
+
+            
+
+            if(document.myForm.numb1.value>0 && document.myForm.numb1.value<=100 
+               && document.myForm.numb2.value>0 && document.myForm.numb2.value<=100 
+                 &&  document.myForm.numb3.value>0 && document.myForm.numb3.value<=100
+                   &&     document.myForm.numb4.value>0 && document.myForm.numb4.value<=100
+                     &&       document.myForm.numb5.value>0 && document.myForm.numb5.value<=100 
+                       &&         document.myForm.numb6.value>0 && document.myForm.numb6.value<=100
+                         &&           document.myForm.numb7.value>0 && document.myForm.numb7.value<=100)
+               
+{
+    
+    alert("Input is OK done!!")
+    
+}
+                
+
+               else if(document.myForm.p1.value>0 && document.myForm.p2.value>0 &&document.myForm.p3.value>0
+                        &&document.myForm.p4.value>0 && document.myForm.p5.value>0 &&document.myForm.p6.value>0
+                        && document.myForm.p7.value>0 )
+                        {
+                            alert("input is OK!!")
+                    return true;
+                   
+                    
+                        }
+                        else{
+                            alert("wrong input")
+                            return false
+                        }
+                        
+
+               
+
+
+                
+
+
+
+
+
+                return (true);
+        }
+        </script>
+
+
+
+
+
+
+
+</head>
+<style>
+
+label{
+    margin-left: 82px;
+    font-size: 20px;
+    
+}
+
+.alert{
+    background-color: blue;
+}
+Submit{
+    background-color: blue;
+}
+
+.row{
+    background-color: aqua;
+    
+}
+.flex-container{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+</style>
+<body>
+    <form name = "myForm" onsubmit = "return(validate());">
+
+        <div class="row" id="captions" style="margin-top: 20px;">
+
+        <label>Estate</label>
+
+       
+
+        
+
+
+
+        <label>5-6 Passengers</label>
+
+        <label>7 Passengers</label>
+
+        <label>8 Passengers</label>
+        <label>9 Passengers</label>
+        <label>14 Passengers</label>
+        <label>16 Passengers</label>
+
+
+        <div class="flex-container">
+            <div class="num1">
+
+            
+            <input type="checkbox" name="checkbox" id="name8" onclick="disable1()"/>
+            <input type="text" size="5px" name="numb1" id="numb1">
+            <text>%</text>
+        </div>
+
+        <div class="num2">
+            <input type="checkbox" name="checkbox" id="name9" onclick="disable2()"/>
+            <input type="text" size="5px" name="numb2" id="numb2">
+            <text>%</text>
+        </div>
+
+
+        <div class="num3">
+            <input type="checkbox" name="checkbox" id="name10" onclick="disable3()"/>
+            <input type="text" size="6px" name="numb3" id="numb3">
+            <text>%</text>
+        </div>
+
+
+        <div class="num4">
+            <input type="checkbox" name="checkbox" id="name11" onclick="disable4()"/>
+            <input type="text" size="6px" name="numb4" id="numb4">
+            <text>%</text>
+        </div>
+
+
+<div class="num5">
+            <input type="checkbox" name="checkbox" id="name12" onclick="disable5()"/>
+            <input type="text" size="6px" name="numb5" id="numb5">
+            <text>%</text>
+        </div>
+
+
+        <div class="num6">
+            <input type="checkbox" name="checkbox" id="name13" onclick="disable6()"/>
+            <input type="text" size="5px" name="numb6" id="numb6">
+            <text>%</text>
+        </div>
+
+        <div class="num7">
+            <input type="checkbox" name="checkbox" id="name14" onclick="disable7()"/>
+            <input type="text" size="5px" name="numb7" id="numb7">
+            <text>%</text>
+        </div>
+
+            </div>
+
+            <div class="flex-container">
+                <div class="p1">
+    
+                <input type="checkbox" name="checkbox" id="name1" onclick="disable8()"/>
+                <input type="text" size="3px" name="p1" id="p1">
+                <text>£</text>
+            </div>
+    
+            <div class="p2">
+                <input type="checkbox" name="checkbox" id="name2" onclick="disable9()"/>
+                <input type="text" size="3px" name="p2" id="p2">
+                <text>£</text>
+            </div>
+    
+    
+            <div class="p3">
+                <input type="checkbox" name="checkbox" id="name3" onclick="disable10()"/>
+                <input type="text" size="3px" name="p3" id="p3">
+                <text>£</text>
+            </div>
+    
+    
+            <div class="p4">
+                <input type="checkbox" name="checkbox" id="name4" onclick="disable11()"/>
+                <input type="text" size="3px" name="p4" id="p4">
+                <text>£</text>
+            </div>
+    
+    
+    <div class="p5">
+                <input type="checkbox" name="checkbox" id="name5" onclick="disable12()"/>
+                <input type="text" size="3px" name="p5" id="p5">
+                <text>£</text>
+            </div>
+    
+    
+            <div class="p6">
+                <input type="checkbox" name="checkbox" id="name6" onclick="disable13()"/>
+                <input type="text" size="3px" name="p6" id="p6">
+                <text>£</text>
+            </div>
+    
+            <div class="p7">
+                <input type="checkbox" name="checkbox" id="name7" onclick="disable14()"/>
+                <input type="text" size="3px" name="p7" id="p7">
+                <text>£</text>
+            </div>
+    
+        
+                </div>
+
+
+    </div>
+
+</br>
+    <input type="submit" value="Submit" id="Submit">
+    </form>
+
+    
+
+    
+</body>
+</html>
